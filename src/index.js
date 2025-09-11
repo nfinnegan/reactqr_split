@@ -4,11 +4,14 @@ import './index.css';
 import App from './App';
 import reportWebVitals from './reportWebVitals';
 import { SplitFactoryProvider } from '@splitsoftware/splitio-react';
+import getUserId from './utils/getUserID';
+
+let id = getUserId();
 
 const sdkConfig = {
   core: {
     authorizationKey: "1lp5a0rjsn1lidv5rvpcfhv0dineok7cbjhm",
-    key: "natalie_test"
+    key: id
 
   }
 }
