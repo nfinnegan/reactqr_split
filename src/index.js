@@ -8,7 +8,7 @@ import { SplitFactoryProvider } from '@splitsoftware/splitio-react';
 const sdkConfig = {
   core: {
     authorizationKey: "1lp5a0rjsn1lidv5rvpcfhv0dineok7cbjhm",
-    key: "natalie_test"
+    key: "natalie_test12"
 
   }
 }
