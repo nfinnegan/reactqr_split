@@ -9,22 +9,31 @@ import { osName, deviceType } from 'react-device-detect';
 function App() {
 
   const QRURL = "https://nfinnegan.github.io/reactqr_split/";
-  const { treatments, isReady } = useSplitTreatments('show_qrCode', {
-    device: deviceType,
-    operatingSystem: osName
+  const featureName = 'show_qrCode';
+
+  const { treatments, isReady } = useSplitTreatments({
+    names: [featureName],
+    attributes:{
+      device: deviceType,
+      operatingSystem: osName
+    }
   });
+
+  console.log("SDK Ready", isReady)
+  console.log("treatments", treatments)
 
   if (!isReady) {
     return <div>Loading...</div>;    
   }
+
+  const { treatment } = treatments[featureName] || {};
 
   return (
     <div>
       <br />
       <span style={{ color: 'black' }}><center>Scan me!</center></span>
       <div className="qr-wrapper">
-        {treatments.show_qrCode.treatment === 'on' ?  <QRCode value={QRURL} /> :  <div></div>}   
-        console.log(treatments.show_qrCode.treatment) 
+        {treatment === 'on' ?  <QRCode value={QRURL} /> :  <div></div>}   
       </div>
   </div>
   ) 
