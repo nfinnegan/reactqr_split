@@ -8,6 +8,7 @@ import { osName, deviceType } from 'react-device-detect';
 
 function App() {
 
+  const QRURL = "https://nfinnegan.github.io/reactqr_split/";
   const { treatments, isReady } = useSplitTreatments('show_qr_code', {
     device: deviceType,
     operatingSystem: osName
