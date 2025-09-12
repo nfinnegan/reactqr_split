@@ -29,12 +29,14 @@ function App() {
   const { treatment } = treatments[featureName] || {};
 
   return (
-    <div>
+  <div>
       <br />
-      <span style={{ color: 'black' }}><center>Scan me!</center></span>
-      <div className="qr-wrapper">
-        {treatment === 'on' ?  <QRCode value={QRURL} /> :  <div></div>}   
-      </div>
+      <span className="container-qr" style={{ color: 'black' }}>
+        <h3>Scan me!</h3>
+          <div className="qr-wrapper">
+            {treatment === 'on' ?  <QRCode value={QRURL} /> :  <div></div>}   
+          </div>
+      </span>
   </div>
   ) 
 };
