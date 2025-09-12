@@ -14,8 +14,8 @@
   background-color: #000000;
 }
 
-.black-header {
-  background-color: #000000;
+.blue-app-header {
+  background-color: #61dafb;
   padding: 30px;
   display: flex;
   flex-direction: column;
@@ -24,8 +24,8 @@
   color: rgb(0, 0, 0);
 }
 
-.gray-app-header {
-  background-color: #E6E6E6;
+.pink-app-header {
+  background-color: #ff009d;
   min-height: 100vh;
   display: flex;
   flex-direction: column;
