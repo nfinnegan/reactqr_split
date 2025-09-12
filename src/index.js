@@ -11,7 +11,7 @@ let id = getUserId();
 const sdkConfig = {
   core: {
     authorizationKey: "1lp5a0rjsn1lidv5rvpcfhv0dineok7cbjhm",
-    key: id
+    key: "123"
 
   }
 }
