@@ -23,7 +23,8 @@ function App() {
       <br />
       <span style={{ color: 'black' }}><center>Scan me!</center></span>
       <div className="qr-wrapper">
-        {treatments.show_qrCode.treatment === 'on' ?  <QRCode value={QRURL} /> :  <div></div>}    
+        {treatments.show_qrCode.treatment === 'on' ?  <QRCode value={QRURL} /> :  <div></div>}   
+        console.log(treatments.show_qrCode.treatment) 
       </div>
   </div>
   ) 
