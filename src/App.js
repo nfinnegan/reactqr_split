@@ -2,6 +2,7 @@ import logo from './logo.svg';
 import './App.css';
 import React from 'react';
 import { useSplitTreatments } from '@splitsoftware/splitio-react';
+import QRCode from "react-qr-code";
 import qrCodeHome from './components/qrCode';
 import { osName, deviceType } from 'react-device-detect';
 

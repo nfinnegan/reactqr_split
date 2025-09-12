@@ -4,7 +4,7 @@ import { useSplitTreatments } from "@splitsoftware/splitio-react";
 
 
 //Change QRURL to the URL where you'll be hosting this app
-const QRURL = "https://ttotenberg-ld.github.io/react_qr_app/";
+const QRURL = "https://nfinnegan.github.io/reactqr_split/";
 
 const qrCodeHome = () => {
 
