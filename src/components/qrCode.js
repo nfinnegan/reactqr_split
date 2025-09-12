@@ -1,14 +1,14 @@
 import QRCode from "react-qr-code";
+import React from "react";
+import { useSplitTreatments } from "@splitsoftware/splitio-react";
 
 
-/* //Change QRURL to the URL where you'll be hosting this app
+//Change QRURL to the URL where you'll be hosting this app
 const QRURL = "https://ttotenberg-ld.github.io/react_qr_app/";
 
-const qrCodeHome = ({ flags }) => {
+const qrCodeHome = () => {
 
-    // The React SDK automatically converts flag keys with dashes and periods to camelCase.
-    // See this page for details: https://docs.launchdarkly.com/sdk/client-side/react/react-web#flag-keys
-    return flags.showQrCode ? (
+    return (
     <div>
       <br />
       <span style={{ color: 'black' }}><center>Scan me!</center></span>
@@ -16,9 +16,7 @@ const qrCodeHome = ({ flags }) => {
         <QRCode value={QRURL} />
       </div>
     </div>
-  ) : (
-    <div></div>
-  );
+  ) 
 };
 
-export default withLDConsumer()(qrCodeHome); */
+export default(qrCodeHome);
