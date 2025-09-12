@@ -3,7 +3,7 @@ import './App.css';
 import React from 'react';
 import { useSplitTreatments } from '@splitsoftware/splitio-react';
 import QRCode from "react-qr-code";
-import qrCodeHome from './components/qrCode';
+//import qrCodeHome from './components/qrCode';
 import { osName, deviceType } from 'react-device-detect';
 
 function App() {
@@ -23,7 +23,7 @@ function App() {
       <br />
       <span style={{ color: 'black' }}><center>Scan me!</center></span>
       <div className="qr-wrapper">
-        {treatments.show_qrCode === 'on' ?  <QRCode value={QRURL} /> :  <div></div>}    
+        {treatments.show_qrCode.treatment === 'on' ?  <QRCode value={QRURL} /> :  <div></div>}    
       </div>
   </div>
   ) 
