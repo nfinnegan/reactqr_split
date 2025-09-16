@@ -21,10 +21,11 @@ function App() {
     }
   });
 
-  console.log("SDK Ready", isReady)
-  console.log("treatments", treatments)
-
   if (!isReady) {
+    console.log("SDK Ready", isReady)
+    console.log("treatments", treatments)
+    console.log("deviceType", deviceType);
+    console.log("osName", osName);
     return <div>Loading...</div>;    
   }
 
@@ -34,6 +35,11 @@ function App() {
 
   console.log("showQRTreatment", showQRTreatment);
   console.log("configBackgroundTreatment", configBackgroundTreatment);
+  console.log("Sending attributes:", {
+    device: deviceType,
+    operatingSystem: osName
+  });
+
 
   return (
   <div className={`${configBackgroundTreatment}`}>
