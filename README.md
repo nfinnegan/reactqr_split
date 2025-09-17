@@ -14,7 +14,7 @@ Below you'll find the flags you need to create, information on the custom attrib
 
 ### Modify variables for your own usage
 
-1. In `App.js` modify the 'QRURL` variable to the GitHub Pages URL you previoiusly copied
+1. In `App.js` modify the `QRURL` variable to the GitHub Pages URL you previoiusly copied
 2. In `index.js` modify the `authorizationKey` to your own Harness client-side SDK key for your production environment
 3. In `package.json`, modify the "homepage" to point to your github pages URL
 
